@@ -1,6 +1,6 @@
 package net.seb.spring.jokes.controllers;
 
-import net.seb.spring.jokes.services.JokesService;
+import net.seb.spring.jokes.services.Service;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class JokeController {
 
-    private final JokesService jokesService;
+    private final Service jokesService;
 
-    public JokeController(JokesService jokesService) {
+    public JokeController(Service jokesService) {
         this.jokesService = jokesService;
     }
 
